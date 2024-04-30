@@ -82,7 +82,7 @@ a:hover {
 .myContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(0, auto);
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -93,43 +93,37 @@ a:hover {
   }
 
   .one {
-    margin-top: 5%;
     grid-column: 1 / 4;
-    grid-row: 1 / 3;
     padding-left: 1em;
+    margin-top: 5%;
   }
 
   .gridimg1{
     margin-top: 20%;
     display: inline-block;
     text-align: center;
-    grid-row: 1 / 3;
-    margin-bottom:15%;
   }
   .gridimg2{
     display: inline-block;
     text-align: center;
-    grid-row: 3 / 5;
+    margin-top:8%;
   }
   .gridimg3{
     display: inline-block;
     text-align: center;
-    grid-row: 5 / 7;
-    margin-top:-23%;
-  }
+    margin-top:20%;
+    }
 
   .two {
     grid-column: 1 / 4;
-    grid-row: 3 / 5;
     padding-left: 1em;
   }
 
 
   .three {
-    margin-top:-8%;
     grid-column: 1 / 4;
-    grid-row: 5 / 7;
     padding-left: 1em;
+    margin-top:3%;
   }
 
   .bodypara {
@@ -153,7 +147,7 @@ a:hover {
   .myContainerPortfolio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(0, auto);
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -194,7 +188,7 @@ a:hover {
   .myContainerContact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-auto-rows: minmax(0, auto);
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -230,24 +224,32 @@ a:hover {
   @media (max-width: 1000px) {
     .myContainer {
       grid-template-columns: 1fr;
+      margin-left: 0%;
+      margin-right: 0%;
     }
     .one{
       grid-row: 2/3;
+      margin-top: 0%;
     }
     .gridimg1{
       grid-row: 1/2;
+      margin-top: 5%;
     }
     .two{
       grid-row: 4/5;
+      margin-top: 0%;
     }
     .gridimg2{
       grid-row: 3/4;
+      margin-top: 0%;
     }
     .three{
       grid-row: 6/7;
+      margin-top: 0%;
     }
     .gridimg3{
       grid-row: 5/6;
+      margin-top: 0%;
     }
     .menu_container{
         font-size: 25px;
@@ -266,35 +268,34 @@ a:hover {
     }
     .special{
       padding-top:8%;
+      margin-left: 3%;
     }
     .myContainerContact {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+      margin-left: 0%;
+      margin-right: 0%;
     }
     .oneContact {
       grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      padding-left: 1em;
-      margin-top: 10%;
+      grid-row: 1/2;
     }
     .gridimg1Contact{
       grid-column: 1 / 2;
-      grid-row: 2 / 3;
-      margin-top: -50px;
+      grid-row: 2/3;
     }
     .myContainerPortfolio {
       grid-template-columns: 1fr;
+      margin-left: 0%;
+      margin-right: 0%;
     }
     .onePort {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-      padding-left: 1em;
     }
   
     .twoPort {
       grid-column: 1 / 2;
       grid-row: 3 / 4;
-      padding-left: 1em;
     }
     .gridimg1Port{
       grid-column: 1 / 2;
