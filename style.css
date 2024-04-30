@@ -328,4 +328,7 @@ a:hover {
     .special{
       padding-top:8%;
     }
+    .footer{
+      display:none;
+    }
   }
