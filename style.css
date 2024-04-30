@@ -25,13 +25,14 @@ img{
     font-size: 30px;
     justify-content: space-between;
     border: 2px solid rgb(48, 48, 48);
-    padding: 0.5%;
+    padding: 0.6%;
     background-color: white;
     border-radius: 15px;
     position: fixed;
+    left:0;
+    right:0;
     width: 84%;
-    margin-left: 7%;
-    margin-right: 8%;
+    margin:auto;
   }
 
 .extra{
@@ -44,6 +45,7 @@ img{
   
 .no_margin{
     margin: 0;
+    margin-left:0.4px;
     font-family: 'Brush Script MT', cursive;
   }
 
