@@ -34,10 +34,6 @@ img{
     width: 84%;
     margin:auto;
   }
-
-.extra{
-  margin-top: -13.2px;
-}
   
 .name {
     flex-basis: 70%;
@@ -154,21 +150,22 @@ a:hover {
     margin-right: 10%;
   }
 
-
-  .special {
-    padding-top: 5%;
-    margin-left: 11%;
+  .topPort{
+    grid-row: 1/2;
+    grid-column: 1/5;
+    margin-top:4%;
+    margin-left: 1.4%;
   }
 
   .onePort {
     grid-column: 2 / 5;
-    grid-row: 1 / 3;
+    grid-row: 2 / 4;
     padding-left: 1em;
   }
 
   .twoPort {
     grid-column: 2 / 5;
-    grid-row: 3 / 5;
+    grid-row: 4 / 6;
     padding-left: 1em;
   }
   .gridimg1Port{
@@ -176,14 +173,14 @@ a:hover {
     display: inline-block;
     text-align: center;
     grid-column:1 / 2;
-    grid-row: 1 / 3;
+    grid-row: 2 / 4;
   }
   .gridimg2Port{
     margin-top:6%;
     display: inline-block;
     text-align: center;
     grid-column:1 / 2;
-    grid-row: 3 / 5;
+    grid-row: 4 / 6;
   }
 
   /*CSS for Contact Page*/
@@ -268,10 +265,6 @@ a:hover {
     li{
       font-size:20px;
     }
-    .special{
-      padding-top:8%;
-      margin-left: 3%;
-    }
     .myContainerContact {
       grid-template-columns: 1fr;
       margin-left: 0%;
@@ -292,20 +285,24 @@ a:hover {
     }
     .onePort {
       grid-column: 1 / 2;
-      grid-row: 1 / 2;
+      grid-row: 2 / 3;
     }
   
     .twoPort {
       grid-column: 1 / 2;
-      grid-row: 3 / 4;
+      grid-row: 4 / 5;
     }
     .gridimg1Port{
       grid-column: 1 / 2;
-      grid-row: 2 / 3;
+      grid-row: 3 / 4;
     }
     .gridimg2Port{
       grid-column:1 / 2;
-      grid-row: 4/5;
+      grid-row: 5/6;
+    }
+    .topPort{
+      margin-left: 4%;
+      padding-top: 8%;
     }
   }
 
@@ -324,9 +321,6 @@ a:hover {
     }
     li{
       font-size:15px;
-    }
-    .special{
-      padding-top:8%;
     }
     .footer{
       display:none;
