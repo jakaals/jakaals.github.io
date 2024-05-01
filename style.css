@@ -223,6 +223,7 @@ a:hover {
   @media (max-width: 1000px) {
     .myContainer {
       grid-template-columns: 1fr;
+      grid-template-rows: 500px auto 500px auto 500px auto;
       margin-left: 0%;
       margin-right: 0%;
     }
@@ -309,6 +310,9 @@ a:hover {
 @media (max-width: 500px) {
     .menu_container{
         font-size: 18px;
+    }
+    .myContainer{
+      grid-auto-rows: minmax(0, auto);
     }
     h1{
       font-size: 1.25em;
